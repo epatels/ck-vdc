@@ -58,35 +58,6 @@ Anonymous usage analytics are **off by default**. On first launch the app asks f
 
 ---
 
-## Building from source
-
-You need Windows, [Python 3.13](https://www.python.org/downloads/) and an internet connection (for the first build).
-
-```powershell
-winget install Python.Python.3.13
-build_installer.bat -Python "py -3.13"
-```
-
-The build script:
-1. Creates a private virtual environment in `build\venv` and installs `requirements-build.txt`
-2. Uses `yt-dlp.exe`, `ffmpeg.exe` and `ffprobe.exe` from the project folder if they are there, otherwise downloads them into `build\cache`
-3. Compiles the app with [Nuitka](https://nuitka.net/)
-4. Builds the installer with [Inno Setup 6](https://jrsoftware.org/isinfo.php) (installed automatically with winget if missing)
-
-Output: `installer_out\CKVDC-Setup-<version>.exe` and a matching `.sha256` file.
-
-Useful options: `-SkipCompile` (reuse the last compile, rebuild only the installer), `-Refresh` (re-download yt-dlp and FFmpeg), `-NoInstaller` (stop after compiling).
-
-To run directly from source without building: `pip install yt-dlp tkinterdnd2 requests packaging sv-ttk mutagen posthog`, put FFmpeg on your `PATH`, then run `python vdc.pyw`.
-
-### Releasing a new version
-
-1. Raise `__version__` in `vdc.pyw`.
-2. Run `build_installer.bat -Python "py -3.13"`.
-3. Create a GitHub release tagged `v<version>` (for example `v3.0.1`) and attach **both** `installer_out\CKVDC-Setup-<version>.exe` and its `.sha256` file. The in-app updater looks for these two files.
-
----
-
 ## Responsible use
 
 Only download or convert content you have the right to use. You are responsible for following the terms of the sites you download from and the copyright laws that apply to you.
@@ -97,4 +68,4 @@ Built on [yt-dlp](https://github.com/yt-dlp/yt-dlp), [FFmpeg](https://ffmpeg.org
 
 ## License
 
-*Add your license here (for example MIT), and a `LICENSE` file to the repository.*
+*Add your terms of use here (for example: free to use, not for redistribution or resale).*
