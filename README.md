@@ -1,8 +1,10 @@
 # CK Video Downloader and Converter
 
+**100% freeware: free to download and use, no ads, no subscription.**
+
 A Windows desktop app for downloading videos and audio from the web (powered by [yt-dlp](https://github.com/yt-dlp/yt-dlp)) and converting media files (powered by [FFmpeg](https://ffmpeg.org/)), with a clean dark/light interface.
 
-**Download:** grab the latest `CKVDC-Setup-<version>.exe` from the [Releases page](https://github.com/epatels/ck-vdc/releases/latest).
+**Download (free):** grab the latest `CKVDC-Setup-<version>.exe` from the [Releases page](https://github.com/epatels/ck-vdc/releases/latest).
 
 ---
 
@@ -68,6 +70,6 @@ Built on [yt-dlp](https://github.com/yt-dlp/yt-dlp), [FFmpeg](https://ffmpeg.org
 
 ## License
 
-CK Video Downloader and Converter is **free to use**. It is provided "as is", without warranty of any kind.
+CK Video Downloader and Converter is **freeware**: free to use. It is provided "as is", without warranty of any kind.
 
 Bundled third-party tools (yt-dlp, FFmpeg and others) remain under their own licenses.
