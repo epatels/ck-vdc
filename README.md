@@ -68,4 +68,6 @@ Built on [yt-dlp](https://github.com/yt-dlp/yt-dlp), [FFmpeg](https://ffmpeg.org
 
 ## License
 
-*Add your terms of use here (for example: free to use, not for redistribution or resale).*
+CK Video Downloader and Converter is **free to use**. It is provided "as is", without warranty of any kind.
+
+Bundled third-party tools (yt-dlp, FFmpeg and others) remain under their own licenses.
