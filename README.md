@@ -36,6 +36,22 @@ Everything the app needs (yt-dlp, FFmpeg, FFprobe) is bundled with the installer
 
 ## Install
 
+### Option 1: winget (recommended)
+
+Open Command Prompt or PowerShell and run:
+
+```
+winget install epatels.CKVideoDownloaderConverter
+```
+
+To update later with winget:
+
+```
+winget upgrade epatels.CKVideoDownloaderConverter
+```
+
+### Option 2: installer
+
 1. Download `CKVDC-Setup-<version>.exe` from the [latest release](https://github.com/epatels/ck-vdc/releases/latest).
 2. Run it. By default it installs for your user only, so no administrator rights are needed.
 3. Launch **CK Video Downloader and Converter** from the Start Menu.
@@ -46,7 +62,7 @@ Everything the app needs (yt-dlp, FFmpeg, FFprobe) is bundled with the installer
 
 ### Updating
 
-The app checks for new versions shortly after it starts. When one is available, choose **Update Now** and it downloads, verifies and installs the new version, then reopens. Your settings and history are kept.
+The app also checks for new versions itself shortly after it starts, however you installed it. When one is available, choose **Update Now** and it downloads, verifies and installs the new version, then reopens. Your settings and history are kept.
 
 ### Uninstalling
 
