@@ -22,19 +22,57 @@ Download videos and playlists with yt-dlp. Convert media with FFmpeg. One tidy q
 
 Pick one. They all install the same app.
 
-| Method | How | Updates |
-|---|---|---|
-| **Microsoft Store** (recommended) | Click **Get it from Microsoft** above, or open the [Store page](https://apps.microsoft.com/detail/9NDXZ7087GLM), or run `winget install 9NDXZ7087GLM --source msstore` | Automatic, through the Store |
-| **winget** | `winget install epatels.CKVideoDownloaderConverter` | `winget upgrade epatels.CKVideoDownloaderConverter`, or the in-app update prompt |
-| **Installer (.exe)** | Download `CKVDC-Setup-<version>.exe` from the [Releases](https://github.com/epatels/ck-vdc/releases/latest) page and run it | In-app update prompt |
-| **Portable (.zip)** | Download `CKVDC-<version>-portable.zip` from Releases, extract it, run `CKVDC.exe` | Manual |
-| **MSIX (sideload)** | `CKVDC-<version>-x64.msix` from Releases, if attached. Needs a trusted signing certificate; the Store version is easier. | Through Windows / App Installer |
+### Microsoft Store (recommended)
 
-Verify any download against the `.sha256` file or `SHA256SUMS-<version>.txt` on the Releases page:
+Click **Get it from Microsoft** above, open the [Store page](https://apps.microsoft.com/detail/9NDXZ7087GLM), or run:
+
+```powershell
+winget install 9NDXZ7087GLM --source msstore
+```
+
+Updates are automatic, through the Store.
+
+### winget
+
+```powershell
+winget install epatels.CKVideoDownloaderConverter
+```
+
+Update later with:
+
+```powershell
+winget upgrade epatels.CKVideoDownloaderConverter
+```
+
+The app also shows an in-app update prompt.
+
+### Installer (.exe)
+
+Download `CKVDC-Setup-<version>.exe` from the [Releases](https://github.com/epatels/ck-vdc/releases/latest) page and run it. Updates come through the in-app prompt.
+
+### Portable (.zip)
+
+Download `CKVDC-<version>-portable.zip` from Releases, extract it and run `CKVDC.exe`. Updates are manual.
+
+### MSIX (sideload)
+
+Download `CKVDC-<version>-x64.msix` from Releases, if attached. It needs a trusted signing certificate, so the Store version is easier. Updates come through Windows / App Installer.
+
+### Verify a download
+
+Compare against the `.sha256` file or `SHA256SUMS-<version>.txt` on the Releases page:
 
 ```powershell
 Get-FileHash .\CKVDC-Setup-4.0.0.exe -Algorithm SHA256
 ```
+
+### Uninstall
+
+```powershell
+winget uninstall epatels.CKVideoDownloaderConverter
+```
+
+Store version: use Settings, then Apps, or the Store.
 
 **Requirements:** Windows 10 version 1809 or later (x64) and an internet connection. yt-dlp and FFmpeg are included; there is nothing else to install.
 
