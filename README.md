@@ -27,7 +27,7 @@ Pick one. They all install the same app.
 Click **Get it from Microsoft** above, open the [Store page](https://apps.microsoft.com/detail/9NDXZ7087GLM), or run:
 
 ```powershell
-winget install 9NDXZ7087GLM --source msstore
+winget install 9NDXZ7087GLM --source msstore --accept-package-agreements
 ```
 
 Updates are automatic, through the Store.
